@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherAppContainer {
+  padding: 30px;
+  border-radius: 20px;
+  width: 500px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: beige;
+}
+
+.weatherInput {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.weatherInput input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  font-size: 20px;
+}
+.weatherInput button {
+  width: 30%;
+  border-radius: 0 10px 10px 0;
+  background: deepskyblue;
+  font-size: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.weatherInput button:hover {
+  transform: scale(1.05);
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.weatherTemperature {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.weatherDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherDetails div {
+  background: blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.25rem;
+  margin: 10px;
+  width: 33%;
+}
+
+.weatherDescriptions {
+  font-size: 1.25rem;
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .weatherAppContainer {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  #weatherText {
+    width: 60%;
+  }
+  .weatherInput button {
+    width: 40%;
+  }
+
+  .weatherDetails {
+    flex-direction: column;
+  }
+
+  .weatherDetails div {
+    width: 100%;
+  }
+}
